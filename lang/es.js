@@ -1,16 +1,10 @@
-/* =========================================================
-   Idioma: Español (es)
-   Para crear un idioma nuevo, duplica este archivo, traduce
-   los valores (nunca las claves) y enlázalo en el <head> de
-   cada página HTML. Ver README.md para el paso a paso.
-   ========================================================= */
 window.translations = window.translations || {};
 window.translations.es = {
   meta: {
     label: "Español",
-    titleHome: "PyxPler — El Pozo de los Deseos: consulta sus 4 voces en Discord",
-    titlePrivacy: "Política de Privacidad — PyxPler",
-    titleTerms: "Términos y Condiciones — PyxPler"
+    titleHome: "PyxPler - El Pozo de los Deseos: consulta sus 4 voces en Discord",
+    titlePrivacy: "Política de Privacidad - PyxPler",
+    titleTerms: "Términos y Condiciones - PyxPler"
   },
 
   nav: {
@@ -139,7 +133,7 @@ window.translations.es = {
 
   privacy: {
     title: "Política de Privacidad",
-    updated: "Última actualización: [completa esta fecha]",
+    updated: "Última actualización: 08/08/26",
     intro: "Esta política explica qué datos recopila PyxPler, tanto en Discord como en este sitio web, y cómo los usamos. Sustituye los textos entre corchetes por la información real de tu proyecto antes de publicar esta página.",
     s1: {
       title: "Qué datos recopilamos",
@@ -147,7 +141,7 @@ window.translations.es = {
     },
     s2: {
       title: "Cómo usamos los datos",
-      body: "Usamos los datos para procesar tus consultas, generar respuestas —incluyendo, cuando corresponde, llamadas a proveedores de inteligencia artificial de terceros—, llevar el conteo de monedas diarias y detectar abuso o mal uso del servicio. No usamos tus mensajes con fines publicitarios."
+      body: "Usamos los datos para procesar tus consultas, generar respuestas incluyendo, cuando corresponde, llamadas a proveedores de inteligencia artificial de terceros, llevar el conteo de monedas diarias y detectar abuso o mal uso del servicio. No usamos tus mensajes con fines publicitarios."
     },
     s3: {
       title: "Con quién compartimos datos",
@@ -155,11 +149,11 @@ window.translations.es = {
     },
     s4: {
       title: "Cuánto tiempo conservamos los datos",
-      body: "Conservamos los registros de consultas el tiempo mínimo necesario para operar y mejorar el servicio [especifica el plazo, por ejemplo 30 días], salvo que debamos conservarlos más tiempo por obligación legal o para investigar un abuso."
+      body: "Conservamos los registros de consultas el tiempo mínimo necesario para operar y mejorar el servicio, salvo que debamos conservarlos más tiempo por obligación legal o para investigar un abuso."
     },
     s5: {
       title: "Tus derechos",
-      body: "Puedes solicitar acceso, corrección o eliminación de tus datos escribiendo a [correo de contacto]. Si resides en el Espacio Económico Europeo u otra región con protección de datos equivalente, estos derechos aplican conforme a su normativa local."
+      body: "Puedes solicitar acceso, corrección o eliminación de tus datos escribiendo a xnnaiof@protonmail.com. Si resides en el Espacio Económico Europeo u otra región con protección de datos equivalente, estos derechos aplican conforme a su normativa local."
     },
     s6: {
       title: "Seguridad",
@@ -175,13 +169,13 @@ window.translations.es = {
     },
     s9: {
       title: "Contacto",
-      body: "Para cualquier consulta sobre privacidad, escríbenos a [correo de contacto] o a través de [tu servidor de soporte en Discord]."
+      body: "Para cualquier consulta sobre privacidad, escríbenos a xnnaiof@protonmail.com o a través de [Servidor no disponible]."
     }
   },
 
   terms: {
     title: "Términos y Condiciones",
-    updated: "Última actualización: [completa esta fecha]",
+    updated: "Última actualización: 08/08/26",
     intro: "Al añadir o usar PyxPler aceptas estos términos. Sustituye los textos entre corchetes por la información real de tu proyecto antes de publicar esta página.",
     s1: {
       title: "Aceptación de los términos",
@@ -209,7 +203,7 @@ window.translations.es = {
     },
     s7: {
       title: "Disponibilidad y cambios del servicio",
-      body: "Podemos modificar, pausar o discontinuar el servicio —incluyendo la economía de monedas o las voces disponibles—, total o parcialmente, en cualquier momento y sin previo aviso. No garantizamos disponibilidad ininterrumpida."
+      body: "Podemos modificar, pausar o discontinuar el servicio -incluyendo la economía de monedas o las voces disponibles-, total o parcialmente, en cualquier momento y sin previo aviso. No garantizamos disponibilidad ininterrumpida."
     },
     s8: {
       title: "Terminación",
@@ -221,7 +215,7 @@ window.translations.es = {
     },
     s10: {
       title: "Contacto",
-      body: "Para cualquier duda sobre estos términos, escríbenos a [correo de contacto] o a través de [tu servidor de soporte en Discord]."
+      body: "Para cualquier duda sobre estos términos, escríbenos a xnnaiof@protonmail.com o a través de [Servidor no disponible]."
     }
   }
 };
