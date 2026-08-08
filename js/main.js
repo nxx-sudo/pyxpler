@@ -1,74 +1,12 @@
 /* =========================================================
    PyxPler — main.js
-   Gestiona: tema (claro / oscuro / automático), idioma,
-   el modal de Discord (servidor/usuario) y el modal de
-   Instalar (plataformas). Para añadir un idioma nuevo, no
-   hace falta tocar este archivo: ver README.md.
+   Gestiona: idioma, el modal de Discord (servidor/usuario) y
+   el modal de Instalar (plataformas). Para añadir un idioma
+   nuevo, no hace falta tocar este archivo: ver README.md.
    ========================================================= */
 
 (function () {
   "use strict";
-
-  /* -----------------------------------------------------
-     TEMA
-     Estados: "auto" (sigue al sistema), "light", "dark".
-     El estado inicial ya lo aplica un script inline en el
-     <head> de cada página para evitar parpadeos (FOUC).
-     ----------------------------------------------------- */
-  var THEME_MODES = ["auto", "light", "dark"];
-  var mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-  function getStoredMode() {
-    return localStorage.getItem("theme-mode") || "auto";
-  }
-
-  function resolveTheme(mode) {
-    if (mode === "auto") {
-      return mediaQuery.matches ? "dark" : "light";
-    }
-    return mode;
-  }
-
-  function applyTheme(mode) {
-    var resolved = resolveTheme(mode);
-    document.documentElement.setAttribute("data-theme", resolved);
-    document.documentElement.setAttribute("data-theme-mode", mode);
-    updateThemeButton(mode, resolved);
-  }
-
-  function setThemeMode(mode) {
-    localStorage.setItem("theme-mode", mode);
-    applyTheme(mode);
-  }
-
-  var ICONS = {
-    light:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>',
-    dark:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 13.4A8.4 8.4 0 1 1 10.6 4a6.7 6.7 0 0 0 9.4 9.4Z"/></svg>',
-    auto:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4.5" width="18" height="12" rx="1.4"/><path d="M8 20h8M12 16.5V20"/></svg>'
-  };
-
-  function updateThemeButton(mode, resolved) {
-    var btn = document.getElementById("theme-toggle");
-    if (!btn) return;
-    btn.innerHTML = ICONS[mode];
-    var t = window.i18n ? window.i18n.t : function (k) { return k; };
-    var label = (t("theme.ariaPrefix") || "Tema") + ": " + (t("theme." + mode) || mode);
-    btn.setAttribute("aria-label", label);
-    btn.setAttribute("title", label);
-  }
-
-  function cycleTheme() {
-    var current = getStoredMode();
-    var next = THEME_MODES[(THEME_MODES.indexOf(current) + 1) % THEME_MODES.length];
-    setThemeMode(next);
-  }
-
-  mediaQuery.addEventListener("change", function () {
-    if (getStoredMode() === "auto") applyTheme("auto");
-  });
 
   /* -----------------------------------------------------
      IDIOMA
@@ -226,7 +164,6 @@
     localStorage.setItem("lang", code);
     applyTranslations();
     updateLangTrigger();
-    updateThemeButton(getStoredMode(), resolveTheme(getStoredMode()));
   }
 
   window.i18n = { t: t, setLang: setLang, get lang() { return currentLang; } };
@@ -310,13 +247,9 @@
     currentLang = detectInitialLang();
     applyTranslations();
     initLangDropdown();
-    applyTheme(getStoredMode());
 
     initModal("invite-modal", "invite-modal-close", ".js-invite-trigger");
     initModal("install-modal", "install-modal-close", ".js-install-trigger");
-
-    var themeBtn = document.getElementById("theme-toggle");
-    if (themeBtn) themeBtn.addEventListener("click", cycleTheme);
 
     var yearEl = document.getElementById("current-year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();

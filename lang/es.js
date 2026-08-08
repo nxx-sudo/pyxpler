@@ -15,17 +15,11 @@ window.translations.es = {
 
   nav: {
     home: "Inicio",
+    howItWorks: "Cómo funciona",
     features: "Voces del Pozo",
     privacy: "Privacidad",
     terms: "Términos",
     invite: "Añadir a Discord"
-  },
-
-  theme: {
-    ariaPrefix: "Tema",
-    auto: "Automático (según el sistema)",
-    light: "Claro",
-    dark: "Oscuro"
   },
 
   lang: {
@@ -83,17 +77,20 @@ window.translations.es = {
     title: "Monedas para consultar al Pozo",
     lede: "Un sistema simple de monedas diarias mantiene el ecosistema equilibrado para toda la comunidad.",
     daily: {
-      figure: "5 🪙 / día",
+      figureNum: "5",
+      figureUnit: " / día",
       title: "Monedas diarias",
       body: "Cada usuario recibe 5 monedas por día, con reinicio automático a las 00:00 UTC."
     },
     cost: {
-      figure: "1 🪙 – 2 🪙",
+      figureNum: "1 – 2",
+      figureUnit: "",
       title: "Costo por consulta",
       body: "El Sabio, El Sarcástico y El Alma cuestan 1 moneda por consulta. Sci-Bot cuesta 2 monedas, por la densidad de su análisis técnico."
     },
     serverCap: {
-      figure: "20 🪙 / día",
+      figureNum: "20",
+      figureUnit: " / día",
       title: "Límite del servidor",
       body: "Cada servidor tiene un tope global de 20 monedas diarias, para mantener la estabilidad del ecosistema."
     }

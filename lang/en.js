@@ -15,17 +15,11 @@ window.translations.en = {
 
   nav: {
     home: "Home",
+    howItWorks: "How it works",
     features: "Voices of the Well",
     privacy: "Privacy",
     terms: "Terms",
     invite: "Add to Discord"
-  },
-
-  theme: {
-    ariaPrefix: "Theme",
-    auto: "Automatic (follows system)",
-    light: "Light",
-    dark: "Dark"
   },
 
   lang: {
@@ -83,17 +77,20 @@ window.translations.en = {
     title: "Coins to consult the Well",
     lede: "A simple daily-coin system keeps the ecosystem balanced for the whole community.",
     daily: {
-      figure: "5 🪙 / day",
+      figureNum: "5",
+      figureUnit: " / day",
       title: "Daily coins",
       body: "Every user gets 5 coins per day, automatically resetting at 00:00 UTC."
     },
     cost: {
-      figure: "1 🪙 – 2 🪙",
+      figureNum: "1 – 2",
+      figureUnit: "",
       title: "Cost per query",
       body: "The Sage, The Sarcastic One and The Soul cost 1 coin per query. Sci-Bot costs 2 coins, due to the density of its technical analysis."
     },
     serverCap: {
-      figure: "20 🪙 / day",
+      figureNum: "20",
+      figureUnit: " / day",
       title: "Server limit",
       body: "Each server has a global cap of 20 daily coins, to keep the ecosystem stable."
     }
