@@ -1,16 +1,10 @@
-/* =========================================================
-   Language: English (en)
-   To add a new language, duplicate this file, translate the
-   values (never the keys), and link it in the <head> of
-   every HTML page. See README.md for the full walkthrough.
-   ========================================================= */
 window.translations = window.translations || {};
 window.translations.en = {
   meta: {
     label: "English",
-    titleHome: "PyxPler — The Wishing Well: consult its 4 voices on Discord",
-    titlePrivacy: "Privacy Policy — PyxPler",
-    titleTerms: "Terms and Conditions — PyxPler"
+    titleHome: "PyxPler - The Wishing Well: consult its 4 voices on Discord",
+    titlePrivacy: "Privacy Policy - PyxPler",
+    titleTerms: "Terms and Conditions - PyxPler"
   },
 
   nav: {
@@ -139,7 +133,7 @@ window.translations.en = {
 
   privacy: {
     title: "Privacy Policy",
-    updated: "Last updated: [fill in this date]",
+    updated: "Last updated: 08/08/26",
     intro: "This policy explains what data PyxPler collects, both on Discord and on this website, and how we use it. Replace the bracketed text with your project's real details before publishing this page.",
     s1: {
       title: "What data we collect",
@@ -147,7 +141,7 @@ window.translations.en = {
     },
     s2: {
       title: "How we use the data",
-      body: "We use the data to process your queries, generate responses — including, where applicable, calls to third-party AI providers —, track your daily coin balance, and detect abuse or misuse of the service. We do not use your messages for advertising purposes."
+      body: "We use the data to process your queries, generate responses - including, where applicable, calls to third-party AI providers -, track your daily coin balance, and detect abuse or misuse of the service. We do not use your messages for advertising purposes."
     },
     s3: {
       title: "Who we share data with",
@@ -155,11 +149,11 @@ window.translations.en = {
     },
     s4: {
       title: "How long we keep data",
-      body: "We keep query logs for the minimum time needed to run and improve the service [specify a period, e.g. 30 days], unless we must keep them longer due to a legal obligation or to investigate abuse."
+      body: "We keep query logs for the minimum time needed to run and improve the service, unless we must keep them longer due to a legal obligation or to investigate abuse."
     },
     s5: {
       title: "Your rights",
-      body: "You can request access to, correction of, or deletion of your data by writing to [contact email]. If you live in the European Economic Area or another region with equivalent data protection, these rights apply under your local regulations."
+      body: "You can request access to, correction of, or deletion of your data by writing to xnnaiof@protonmail.com. If you live in the European Economic Area or another region with equivalent data protection, these rights apply under your local regulations."
     },
     s6: {
       title: "Security",
@@ -175,13 +169,13 @@ window.translations.en = {
     },
     s9: {
       title: "Contact",
-      body: "For any privacy questions, write to us at [contact email] or through [your Discord support server]."
+      body: "For any privacy questions, write to us at xnnaiof@protonmail.com or through [Server unavailable]."
     }
   },
 
   terms: {
     title: "Terms and Conditions",
-    updated: "Last updated: [fill in this date]",
+    updated: "Last updated: 08/08/26",
     intro: "By adding or using PyxPler you accept these terms. Replace the bracketed text with your project's real details before publishing this page.",
     s1: {
       title: "Acceptance of terms",
@@ -209,7 +203,7 @@ window.translations.en = {
     },
     s7: {
       title: "Service availability and changes",
-      body: "We may modify, pause or discontinue the service — including the coin economy or the available voices —, in whole or in part, at any time and without prior notice. We do not guarantee uninterrupted availability."
+      body: "We may modify, pause or discontinue the service - including the coin economy or the available voices -, in whole or in part, at any time and without prior notice. We do not guarantee uninterrupted availability."
     },
     s8: {
       title: "Termination",
@@ -221,7 +215,7 @@ window.translations.en = {
     },
     s10: {
       title: "Contact",
-      body: "For any questions about these terms, write to us at [contact email] or through [your Discord support server]."
+      body: "For any questions about these terms, write to us at xnnaiof@protonmail.com or through [server unavailable]."
     }
   }
 };
