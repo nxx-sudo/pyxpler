@@ -134,7 +134,7 @@ window.translations.en = {
   privacy: {
     title: "Privacy Policy",
     updated: "Last updated: 08/08/26",
-    intro: "This policy explains what data PyxPler collects, both on Discord and on this website, and how we use it. Replace the bracketed text with your project's real details before publishing this page.",
+    intro: "This policy explains what data PyxPler collects, both on Discord and on this website, and how we use it.",
     s1: {
       title: "What data we collect",
       body: "When you use the bot on Discord, we process your user ID, the server ID, your daily coin balance, and the content of the queries you send to each voice, solely to generate a response. This website does not use tracking cookies: your language and theme preferences are stored only in your own browser (localStorage) and are never sent to our servers."
@@ -176,7 +176,7 @@ window.translations.en = {
   terms: {
     title: "Terms and Conditions",
     updated: "Last updated: 08/08/26",
-    intro: "By adding or using PyxPler you accept these terms. Replace the bracketed text with your project's real details before publishing this page.",
+    intro: "By adding or using PyxPler you accept these terms.",
     s1: {
       title: "Acceptance of terms",
       body: "By inviting the bot to your server or interacting with it, you confirm that you accept these terms and Discord's Terms of Service and Community Guidelines."
