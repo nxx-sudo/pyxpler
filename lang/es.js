@@ -134,7 +134,7 @@ window.translations.es = {
   privacy: {
     title: "Política de Privacidad",
     updated: "Última actualización: 08/08/26",
-    intro: "Esta política explica qué datos recopila PyxPler, tanto en Discord como en este sitio web, y cómo los usamos. Sustituye los textos entre corchetes por la información real de tu proyecto antes de publicar esta página.",
+    intro: "Esta política explica qué datos recopila PyxPler, tanto en Discord como en este sitio web, y cómo los usamos.",
     s1: {
       title: "Qué datos recopilamos",
       body: "Al usar el bot en Discord, procesamos tu identificador de usuario, el identificador del servidor, tu saldo de monedas diarias y el contenido de las consultas que envías a cada voz, únicamente para generar una respuesta. En este sitio web no usamos cookies de seguimiento: tu preferencia de idioma y de tema se guarda solo en tu propio navegador (localStorage) y nunca se envía a nuestros servidores."
@@ -176,7 +176,7 @@ window.translations.es = {
   terms: {
     title: "Términos y Condiciones",
     updated: "Última actualización: 08/08/26",
-    intro: "Al añadir o usar PyxPler aceptas estos términos. Sustituye los textos entre corchetes por la información real de tu proyecto antes de publicar esta página.",
+    intro: "Al añadir o usar PyxPler aceptas estos términos.",
     s1: {
       title: "Aceptación de los términos",
       body: "Al invitar el bot a tu servidor o al interactuar con él, confirmas que aceptas estos términos y las Condiciones de Servicio y Directrices de la Comunidad de Discord."
